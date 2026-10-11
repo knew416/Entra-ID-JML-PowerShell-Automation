@@ -1,0 +1,4 @@
+EmployeeId,DisplayName,Department,Manager,StartDate,Status,Approved
+LAB005,Bruno Mars,,Beyonce Carter,2026-01-01,Active,Yes
+LAB006,Alicia Keys,Finance,Beyonce Carter,2026-01-01,Active,Yes
+LAB006,Alicia Keys,IT,Beyonce Carter,2026-01-01,Active,Yes

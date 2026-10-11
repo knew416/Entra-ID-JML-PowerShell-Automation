@@ -1,0 +1,5 @@
+EmployeeId,DisplayName,Department,Manager,StartDate,Status,Approved
+LAB001,Beyonce Carter,Finance,Lab Director,2026-01-01,Active,Yes
+LAB002,Rihanna Fenty,HR,Beyonce Carter,2026-01-01,Active,Yes
+LAB003,Drake Graham,IT,Beyonce Carter,2026-01-01,Active,Yes
+LAB004,John Jacob,HR,Beyonce Carter,2026-01-01,Active,Yes
