@@ -12,12 +12,7 @@ All celebrity-inspired names represent fictional test identities. No connection 
 | Rihanna Fenty | HR | Transfer to IT |
 | Drake Graham | IT | Terminated: disable, revoke sessions, remove designated groups |
 | John Jacob | HR | Separate failed-transfer test to Finance |
-| Bruno Mars | Missing | Reject before provisioning |
-| Alicia Keys | Conflicting duplicate ID | Reject both occurrences |
 
-## Start here
-
-Follow [the walkthrough](docs/WALKTHROUGH.md) one stage at a time. Use [the screenshot checklist](docs/SCREENSHOTS.md) during each stage. Record observed outcomes in [the test-results template](docs/TEST-RESULTS.md).
 
 ## Controls
 
@@ -46,10 +41,3 @@ Commit the sanitized script, fictional CSVs, example group map, sanitized report
 
 This project connects to my previous account creation, access approvals, monthly audits and employee-change responsibilities. It demonstrates how I translated that process into repeatable identity automation and exception reporting.
 
-## Microsoft references
-
-- [Create users](https://learn.microsoft.com/en-us/graph/api/user-post-users?view=graph-rest-1.0)
-- [Update users and disable accounts](https://learn.microsoft.com/en-us/graph/api/user-update?view=graph-rest-1.0)
-- [Add group members](https://learn.microsoft.com/en-us/graph/api/group-post-members?view=graph-rest-1.0)
-- [Remove membership using $ref](https://learn.microsoft.com/en-us/graph/api/group-delete-members?view=graph-rest-1.0)
-- [Revoke sign-in sessions](https://learn.microsoft.com/en-us/graph/api/user-revokesigninsessions?view=graph-rest-1.0)
