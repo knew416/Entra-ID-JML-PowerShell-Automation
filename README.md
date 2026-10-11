@@ -1,6 +1,6 @@
 # Automated Entra ID Joiner–Mover–Leaver Lab
 
-**Status: prepared for tenant execution. Live test results and screenshots are pending.**
+**Status:** Initial live tenant testing completed. Four fictional users were successfully onboarded, and an identical onboarding rerun returned `NoChange` for all four. Invalid CSV testing returned three `NeedsReview` results for a missing department and duplicate employee IDs. Recovery after a controlled failure succeeded for John Jacob, but his final recovery rerun was not completed. Automated mover and leaver results remain unverified, and screenshots are pending publication.
 
 This project uses a simulated HR CSV, PowerShell 7 and Microsoft Graph to provision fictional employees, reconcile department access and offboard a departing employee. It builds on manual JML work with automation, validation and evidence.
 
