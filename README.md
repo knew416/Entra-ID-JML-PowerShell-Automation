@@ -1,6 +1,6 @@
 # Automated Entra ID Joiner–Mover–Leaver Lab
 
-**Status:** Initial live tenant testing completed. Four fictional users were successfully onboarded, and an identical onboarding rerun returned `NoChange` for all four. Invalid CSV testing returned three `NeedsReview` results for a missing department and duplicate employee IDs. Recovery after a controlled failure succeeded for John Jacob, but his final recovery rerun was not completed. Automated mover and leaver results remain unverified, and screenshots are pending publication.
+**Status:** Initial live tenant testing completed. Four fictional users were successfully onboarded, and an identical onboarding rerun returned `NoChange` for all four. Invalid CSV testing returned three `NeedsReview` results for a missing department and duplicate employee IDs. Recovery after a controlled failure succeeded for John Jacob, but his final recovery rerun was not completed.
 
 This project uses a simulated HR CSV, PowerShell 7 and Microsoft Graph to provision fictional employees, reconcile department access and offboard a departing employee. It builds on manual JML work with automation, validation and evidence.
 
@@ -36,6 +36,28 @@ Session revocation is deliberately repeated on offboarding reruns to recover fro
 Do not run concurrent instances. There is no distributed lock, rollback or write retry. A partially provisioned disabled account needs manual review. A transfer that removes old access but fails to grant new access can leave the user with no department group; this is intentional and reported. Graph replication delays can produce `NeedsReview`; inspect current state and rerun only after review.
 
 ## Portfolio evidence
+
+### Test screenshots
+
+#### Joiner — account creation
+![Created users](Automated%20JML%20Lab/5-created%20users.png)
+
+#### Repeat run — no duplicate changes
+![Onboarding rerun](Automated%20JML%20Lab/7-no%20duplicates%20rerun.png)
+
+#### Mover — Rihanna
+![Before transfer](Automated%20JML%20Lab/9-Rihanna-before.png)
+![After transfer](Automated%20JML%20Lab/12-rihanna-after.png)
+
+#### Leaver — Drake
+![Account disabled](Automated%20JML%20Lab/13-Disabled-Drake.png)
+![Access removed](Automated%20JML%20Lab/14-drake%20access%20removed.png)
+![Offboarding log](Automated%20JML%20Lab/15-offboarding%20log.png)
+
+#### Validation — invalid records blocked
+![Invalid records](Automated%20JML%20Lab/17-invalid%20records%20blocked.png)
+
+**Incomplete test:** John Jacob’s final recovery rerun was not completed.
 
 Commit the sanitized script, fictional CSVs, example group map, sanitized reports, completed tests and actual screenshots. Keep local configuration and raw reports private. Do not claim completed automation until the live runs are documented.
 
